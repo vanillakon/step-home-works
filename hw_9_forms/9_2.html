@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form2</title>
+    <link rel="stylesheet" href="9_2.css">
+    <link rel="stylesheet" href="9_2_styles.css">
+    </head>
+    <body>
+      <div class="container">
+        <form action="#" class="form_style">
+          <p class="title">Inputs</p>
+          <input type="text" class="input_text input" placeholder="Enter some text">
+          <input type="text" class="input_text input_text__valid input" placeholder="valid text">
+          <input type="text" class="input_text input_text__invalid input" placeholder="invalid text">
+          <p class="title">Check boxes</p>
+
+          <label class="checkbox_one">
+            <input type="checkbox" class="checkbox_input">
+            <div class="checkbox_div"></div>
+            <span class="check_text">Subscribe</span>
+          </label>
+
+          <label class="checkbox_two">
+            <input type="checkbox" class="checkbox_input" checked="false" id="checkbox_title">
+            <div class="checkbox_div checkbox_div__negative"></div>
+            <span class="check_text">Subscribe</span>
+          </label>
+
+          <p class="title title__mod">Radio buttons</p>
+
+          <div class="gender_box"><span class="gender_title">Gender:</span>
+            <label class="container_radio"><span class="gender_title">Male</span>
+            <input type="radio" checked="checked" name="radio" class="radio_btn">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container_radio"><span class="gender_title">Female</span>
+            <input type="radio" name="radio" class="radio_btn">
+            <span class="checkmark"></span>
+          </label>
+          </div>
+          <p class="title title__mod">Buttons</p>
+          <div class="container_btns">
+            <button class="btn btn__active">Active</button>
+            <button class="btn btn__active btn_active__colored">Hover</button>
+            <button class="btn btn__passive">Danger</button>
+            <button class="btn btn__passive btn_passive__colored">Hover</button>
+            <button class="btn btn__diss" disabled>Disabled</button>
+            <button class="btn btn__circle btn__active">+</button>
+            <button class="btn btn__circle btn__passive">-</button>
+          </div>
+          <p class="title">Text area</p>
+          <textarea name="name" rows="8" cols="80" class="textarea_style" placeholder="Enter some text..."></textarea>
+
+        </form>
+      </div>
+    </body>
+  </html>

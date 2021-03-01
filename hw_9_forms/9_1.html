@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link rel="stylesheet" href="9_1.css">
+    </head>
+    <body>
+      <div class="container">
+          <form action="#" class="form_style" id="main_form">
+            <fieldset class="field_style" form="main_form">
+              <legend class="legend_style">credit card details</legend>
+
+              <label class="label_style" for="card">Card Number</label>
+              <input class="input_style" type="text" id="card" placeholder="1234 5678 9012 3456">
+
+              <label class="label_style" for="name">Name On Card</label>
+              <input class="input_style" type="text" id="name" placeholder="Name Surname">
+
+              <label class="label_style label_style__modification" for="month">Expiry Date</label>
+              <input class="input_style input_style__modification" type="text" id="month" maxlength="2" placeholder="02">
+
+              <input class="input_style input_style__modification" type="text" id="year" maxlength="4" placeholder="2017">
+
+              <label class="label_style label_style__modification" for="cvv">CVV / CVN</label>
+              <input class="input_style input_style__modification" type="password" id="cvv" placeholder="***" maxlength="3">
+            </fieldset>
+            <div class="bg_container">
+              <div class="image"></div>
+            </div>
+          </form>
+      </div>
+    </body>
+  </html>

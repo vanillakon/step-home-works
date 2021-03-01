@@ -1,0 +1,259 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html, body{
+  height: 100%;
+  background: #f5f5f5;
+}
+.container{
+  max-width: 1920px;
+  background: #f5f5f5;
+  position: relative;
+  overflow: auto;
+  height: 100%;
+  padding: 22px 36px;
+}
+.header{
+  min-width: 100%;
+  height: 60px;
+  display: flex;
+  margin: 0 -36px;
+}
+.header_logo,.header_account{
+  display: flex;
+  min-width: calc(50% - 36px);
+  height: 100%;
+}
+.header_logo{
+  padding-left: 2px;
+  margin-left: 36px;
+}
+.header_logo_text:hover{
+  cursor: pointer;
+}
+.header_account{
+  flex-direction: row-reverse;
+  margin-right: 36px;
+}
+.header_icon,.header_icon2{
+  width: 38px;
+  height: 38px;
+  background: url('icons_hw/mail.png') no-repeat;
+  background-size: 38px;
+}
+.header_icon2{
+  background: url('icons_hw/account.png') no-repeat;
+  background-size: 38px;
+}
+.header_logo_text{
+  margin-left: 10px;
+  margin-top: 12px;
+}
+.uppertext{
+  text-transform: uppercase;
+}
+.header_account .header_logo_text{
+  margin-right: 10px;
+}
+.header{
+  border-bottom: 3px solid #a3a3a3;
+  margin-bottom: 18px;
+}
+.main{
+  min-width: 100%;
+}
+.main_link{
+  display: block;
+  width: 178px;
+  height: 44px;
+  background: #f5f5f5;
+  padding: 12px 54px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.main_link:hover{
+  background: #f4e4e4;
+}
+.main_mails{
+  width: calc(100% - 196px);
+  float: right;
+  margin-top: -176px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.mail{
+  min-width: calc(100%-200px);
+  height: 36px;
+  border-bottom: 3px solid #dddddd;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.mail_logo,.mail_adress,.mail_text,.mail_text2,.mail_file,.mail_date{
+  float: left;
+  padding-top: 5px;
+}
+.mail_file,.mail_date{
+  float: right;
+}
+.text_span{
+  color: #a5a5a1;
+  margin-right: 5px;
+}
+.mail_logo, .colored_logo{
+  width: 42px;
+  height: 32px;
+  background: url('icons_hw/star1.svg') no-repeat;
+  background-size: 16px;
+  background-position: 20% 30%;
+}
+.colored_logo{
+  background: url('icons_hw/star2.svg') no-repeat;
+  background-size: 16px;
+  background-position: 20% 30%;
+}
+.mail_adress{
+  min-width:190px;
+}
+.mail_text{
+  max-width: 30%;
+}
+.mail_text2{
+  color: #a5a5a1;
+  min-width: 30%;
+}
+.mail_file{
+  background-color: yellow;
+  width: 50px;
+  height: 36px;
+  background: url('icons_hw/attach_26.png') no-repeat;
+  background-size: 14px;
+  background-position: 40% 34%;
+}
+.mail_date{
+width: 72px;
+}
+.hidden{
+  display: none;
+}
+.incoming,.outgoing,.drafts,.spam{
+position: relative;
+}
+.incoming:before,.outgoing:before,.drafts:before,.spam:before{
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  width: 22px;
+  height: 22px;
+}
+.incoming:before{
+  background: url('icons_hw/incom.png') no-repeat;
+  background-size: 22px;
+}
+.outgoing:before{
+  background: url('icons_hw/outcom.png') no-repeat;
+  background-size: 22px;
+}
+.drafts:before{
+  background: url('icons_hw/draft.png') no-repeat;
+  background-size: 22px;
+}
+.spam:before{
+  background: url('icons_hw/spam.png') no-repeat;
+  background-size: 22px;
+}
+@media(max-width: 1105px){
+  /* .container{
+    overflow: auto;
+  } */
+  .mail_adress{
+    min-width: 20%;
+  }
+}
+@media(max-width: 1075px){
+  .mail_adress{
+    min-width: 17%;
+  }
+}
+@media(max-width: 1046px){
+  .mail_adress{
+    min-width: calc(100% - 132px);
+  }
+  .mail_logo,.mail_adress,.mail_text,.mail_text2,.mail_file,.mail_date{
+    margin: 0;
+    padding-top: 0;
+    line-height: 20px;
+  }
+  .mail_logo{
+    height: 16px;
+    margin-top: 3px;
+  }
+  .mail_text2,.mail_text{
+    min-width: 100%;
+    margin: 0;
+    margin-left: 42px;
+  }
+  .text_span{
+    display: none;
+  }
+  .hidden{
+    background: none;
+  }
+  .mail{
+    height: 68px;
+  }
+  .mail_short{
+    height: 48px;
+  }
+  .mail_file, .mail_date{
+  float: right;
+  text-align: right;
+  margin-top: -57px;
+  }
+  .mail_file{
+    width: 36px;
+    margin-right: 54px;
+    margin-top: -63px;
+  }
+  .mail_date{
+    float: right;
+    width: 54px;
+  }
+  .margined{
+    margin-top: -39px;
+  }
+  .margined2{
+    margin-top: -45px;
+  }
+}
+@media(max-width: 662px){
+  .mail_text2{
+    white-space: nowrap;
+  }
+}
+@media(max-width:550px){
+  .main_mails{
+    width: calc(100% - 86px);
+  }
+  .main_link{
+    max-width: 62px;
+    max-height: 62px;
+    padding: 0;
+    margin: 0;
+  }
+  .link_span{
+    display: none;
+  }
+  .mail_logo{
+    width: 26px;
+  }
+  .mail_text, .mail_text2{
+    margin-left: 26px;
+  }
+}

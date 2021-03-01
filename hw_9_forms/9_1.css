@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html, body{
+  height: 100%;
+}
+.container{
+  width: 100%;
+  min-height: 100%;
+  background: #f5f5f5;
+  padding-top: 50px;
+}
+.form_style{
+  margin: 0 auto;
+  width: 700px;
+  height: 486px;
+  background: #9fcdcd;
+  border-radius: 15px;
+  position: relative;
+}
+.field_style{
+  width: calc(100% - 240px);
+  height: 100%;
+  border: none;
+  position: relative;
+  padding-left: 37px;
+  padding-top: 121px;
+}
+.legend_style{
+  background: #db6423;
+  color: #fff;
+  text-transform: uppercase;
+  height: 52px;
+  width: 548px;
+  position: absolute;
+  left: -25px;
+  top: 50px;
+  padding-left: 62px;
+  padding-top: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.input_style{
+  display: block;
+  border: none;
+  border-bottom: 1px solid #466c6f;
+  height: 48px;
+  width: 374px;
+  background: #a9d2d2;
+  position: relative;
+  margin-left: 0;
+  padding-left: 12px;
+  margin-top: 15px;
+  font-size: 16px;
+  outline: none;
+}
+.input_style:not(:last-of-type){
+  margin-bottom: 24px;
+}
+.input_style::placeholder{
+  color: #779fa0;
+}
+.label_style{
+  color: #466c6f;
+  font-size: 14px;
+}
+.input_style__modification{
+  display: inline-block;
+  width: 108px;
+  position: relative;
+  margin: 0;
+  margin-top: 30px;
+}
+.input_style__modification:not(:last-of-type){
+  margin-right: 20px;
+}
+.label_style__modification{
+  position: absolute;
+  left: 37px;
+  top: 329px;
+}
+.label_style__modification:last-of-type{
+  left: 304px;
+}
+.bg_container{
+  width: 240px;
+  height: 272px;
+  position: absolute;
+  left: 460px;
+  top: 214px;
+  overflow: hidden;
+  border-radius: 0 0 15px 0;
+}
+.image{
+  width: 320px;
+  height: 340px;
+  background: url('./icons/moon_flag.png') no-repeat;
+  background-size: cover;
+}

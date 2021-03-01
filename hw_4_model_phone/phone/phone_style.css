@@ -1,0 +1,367 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  font-family: 'San Francisco';
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: normal;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+.container{
+  margin: 30px auto;
+  max-width: 500px;
+  height: 700px;
+  padding: 60px 110px;
+}
+.phone{
+  width: 280px;
+  height: 570px;
+  border: 2px solid #474747;
+  position: relative;
+  border-radius: 40px;
+  box-shadow: 0px 17px 41px 0px rgba(0,0,0,0.3);
+}
+.phone_border, .phone_border_two, .phone_body, .phone_display{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #d6d6d6;
+  border-radius: 38px;
+}
+.phone_rightbtn,.phone_leftbtn1,.phone_leftbtn2,.phone_leftbtn3{
+  position: absolute;
+  width: 3px;
+  height: 65px;
+  border: 1px solid #5e5e5e;
+  background: #c4c4c4;
+  left: 273px;
+  top: 130px;
+}
+.phone_leftbtn1{
+  height: 22px;
+  top: 75px;
+  left: -6px;
+}
+.phone_leftbtn2{
+  height: 40px;
+  top: 117px;
+  left: -6px;
+}
+.phone_leftbtn3{
+  height: 40px;
+  top: 168px;
+  left: -6px;
+}
+
+.phone_border_two{
+  border: 3px solid #353535;
+  border-radius: 36px;
+}
+.phone_body{
+  border: 5px solid #797979;
+  border-radius: 33px;
+}
+.phone_display{
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #020000;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(112,147,185,1) 5%, rgba(244,34,54,1) 50%, rgba(41,108,121,1) 85%);
+}
+.phone_mid{
+  width: 100%;
+  height: 442px;
+}
+.phone_bottom{
+display: flex;
+padding: 0 30px;
+width: 100%;
+height: 35px;
+}
+.phone_lighter, .phone_botcamera{
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: #274255;
+opacity: 0.7;
+}
+.phone_leftbot, .phone_midbot, .phone_rightbot{
+width: 33.33%;
+}
+.phone_botcamera{
+  position: absolute;
+  left: 181px;
+  bottom: 35px;
+}
+.phone_lighter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.lighter_top,.lighter_btn,.lighter_head,.lighter_body,.botcamera_top,.botcamera_head,.botcamera_body,.botcamera_glass{
+  position: absolute;
+}
+.lighter_top{
+  width: 7px;
+  height: 1px;
+  top: 10px;
+}
+.lighter_head{
+top: 12px;
+border-bottom: 7px solid #f9f9f5;
+border-left: 2px solid transparent;
+border-right: 2px solid transparent;
+height: 0;
+width: 7px;
+transform: rotate(180deg);
+}
+.lighter_body{
+top: 19px;
+width: 3px;
+height: 6px;
+}
+.lighter_btn{
+  width: 2px;
+  height: 3px;
+  background:#000;
+  opacity: 0.5;
+  border-radius: 50%;
+  top: 19px;
+}
+.botcamera_top,.botcamera_head,.botcamera_body,.botcamera_glass,.lighter_body,.lighter_top{
+  background: #f9f9f5;
+}
+.botcamera_body{
+  width: 15px;
+  height: 8px;
+  left: 10px;
+  top: 13px;
+  border-radius: 1px;
+}
+.botcamera_glass{
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  left: 14px;
+  top: 13px;
+}
+.botcamera_head{
+  top: 10px;
+  left: 12px;
+  border-bottom: 11px solid #f9f9f5;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  height: 0;
+  width: 11px;
+  background: #274255;
+}
+.botcamera_top{
+  width: 2px;
+  height: 2px;
+  top: 11px;
+  left: 11px;
+  border-radius: 1px 1px 0 0;
+}
+.phone_top{
+  display: flex;
+  height: 24px;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+.phone_righttop{
+  position: relative;
+  top: 0;
+  height: 16px;
+  display: flex;
+}
+.phone_righttop:after{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #6b6476;
+  opacity: 0.3;
+  left: 200px;
+  margin-top: 23px;
+}
+.phone_signal, .phone_wifi, .phone_battery{
+  width: 16px;
+  position: absolute;
+}
+.phone_signal{
+display: flex;
+height: 8px;
+top: 10px;
+left: 193px;
+transform: rotate(180deg);
+}
+.signal_one,.signal_two,.signal_three,.signal_four{
+width: 3px;
+background: #f9f9f5;
+border-right: 1px solid rgba(121,140,177,0.8);;
+}
+.signal_one{
+  height: 5px;
+}
+.signal_two{
+  height: 4px;
+}
+.signal_three{
+  height: 3px;
+}
+.signal_four{
+  height: 2px;
+}
+.phone_wifi{
+width: 10px;
+top: 12px;
+left: 211px;
+}
+.wifi_one,.wifi_two,.wifi_three,.wifi_four,.wifi_five{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #f9f9f5;
+  border-radius: 50%;
+}
+.wifi_two{
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid rgba(121,140,177,0.8);;
+  top: 1px;
+  left: 1px;
+}
+.wifi_three{
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top:4px solid #f9f9f5;
+  top: 2px;
+  left: 2px;
+}
+.wifi_four{
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 3px solid rgba(121,140,177,0.8);;
+  top: 3px;
+  left: 3px;
+}
+.wifi_five{
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 2px solid #f9f9f5;
+  top: 4px;
+  left: 4px;
+}
+.phone_battery{
+  display: flex;
+  height: 5px;
+  top: 13px;
+  left: 224px;
+}
+.phone_batbody, .phone_bathead{
+  background: #f9f9f5;
+}
+.phone_batbody{
+  width: 12px;
+  height: 100%;
+  border-radius: 1px;
+  border: 1px solid rgba(121,140,177,0.8);;
+  z-index: 5;
+}
+.phone_bathead{
+width: 4px;
+height: 50%;
+position: absolute;
+top: 1px;
+left: 9px;
+border-radius: 1px;
+border: 1px solid rgba(121,140,177,0.8);;
+z-index: 2;
+}
+.phone_midtop{
+  position: absolute;
+  background: #000;
+  border-radius: 0 0 10px 10px;
+  width: 136px;
+  height: 23px;
+  left: calc(50% - 68px);
+  top: -4px;
+}
+.phone_speaker{
+  position: absolute;
+  left: 50px;
+  top: 8px;
+  width: 35px;
+  height: 5px;
+  background: #1a1a1a;
+  border-radius: 5px;
+}
+.phone_camera{
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #001435;
+  top: 7px;
+  left: 92px;
+}
+.phone_lock{
+  display: flex;
+  flex-direction: column;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  left: calc(50% - 14px);
+  top: 14px;
+  margin: 0 0 16px 0;
+}
+.phone_unlocked{
+  left: calc(50% - 8px);
+  position: absolute;
+  bottom: 0;
+  width: 16px;
+  height: 14px;
+  background: #f9f9f5;
+  border-radius: 3px;
+}
+.phone_toplock{
+  position: absolute;
+  top: 2px;
+  left: 17px;
+  width: 13px;
+  height: 12px;
+  border-radius: 13px 13px 0 0;
+  border-top: 2px solid #f9f9f5;
+  border-left: 2px solid #f9f9f5;
+  border-right: 2px solid #f9f9f5;
+}
+.phone_bottom:after{
+  content: "";
+  position: absolute;
+  width: 88px;
+  height: 3px;
+  bottom: 0;
+  left: calc(50% - 44px);
+  background-color: #fffdfc;
+  border-radius: 5px;
+  margin: 0 0 5px 0;
+}
+.phone_time, .phone_date{
+  font-size: 40px;
+  color: #f9f9f5;
+  text-align: center;
+  font-weight: 100;
+}
+.phone_date{
+  font-size: 13px;
+}

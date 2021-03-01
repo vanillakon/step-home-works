@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html, body{
+  height: 100%;
+}
+.container{
+  min-width: 100%;
+  min-height: 100%;
+  padding-top: 50px;
+}
+.title{
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.form_style{
+  margin: 0 auto;
+  width: 885px;
+  height: 750px;
+  background: #f5f5f5;
+  padding-top: 44px;
+  padding-left: 42px;
+}
+/* .checkbox_div{
+  position: relative;
+  width: 48px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #41ad49;
+  display: inline-block;
+}
+.checkbox_input{
+  display: none;
+}
+.checkbox_div::before{
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 24px;
+  height: 20px;
+  border-radius: 5px;
+  background: #41ad49;
+  transition: all 0.3s ease 0s;
+}
+.checkbox_input:checked ~ .checkbox_div::before{
+  background-color: #e44061;
+  left: 20px;
+}
+.checkbox_input:checked ~ .checkbox_div{
+  border-color: #e44061;
+}
+.check_text{
+  margin-right: 18px;
+  position: relative;
+  top: -5px;
+} */
+/* .container_radio{
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+  border-color: #e44061;
+}
+.radio_btn{
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #41ad49;
+}
+.radio_btn:checked ~ .checkmark {
+  background-color: #fff;
+}
+.radio_btn:checked ~ .checkmark:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	background: #41ad49;
+} */
+.title__mod{
+  margin-top: 56px;
+}
+.container_btns{
+  display: flex;
+  margin-bottom: 56px;
+}
+/* .btn{
+  display: inline-block;
+  height: 44px;
+  color: #fff;
+  padding: 14px 22px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn:not(:last-of-type){
+  margin-right: 12px;
+}
+.btn__circle{
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  font-size: 16px;
+}
+.btn__active{
+  background-color: #41ad49;
+}
+.btn__passive{
+  background-color: #e44061;
+}
+.btn__active:hover{
+background-color: #2c7731;
+}
+.btn__passive:hover{
+background-color: #97293f;
+}
+.btn__diss{
+  background-color: #808080;
+  cursor: none;
+}
+.btn_active__colored{
+background-color: #2c7731;
+}
+.btn_passive__colored{
+background-color: #97293f;
+} */
+.gender_title{
+  position: relative;
+  top: 5px;
+  left: -5px;
+}
+.gender_title:first-of-type{
+  margin-right: 14px;
+}
+.gender_box{
+  padding-left: 5px;
+}

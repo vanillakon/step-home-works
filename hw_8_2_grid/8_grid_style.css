@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+html, body{
+  height: 100%;
+}
+.container{
+  margin: 0 auto;
+  min-height: 648px;
+  max-width: 1024px;
+  background: #f5f5f5;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: minmax(48px, auto);
+  padding: 44px 88px 52px 126px;
+  grid-gap: 12px 24px;
+  grid-template-areas: "female1 text1 null1"
+                       "null2 text2 male2"
+                       "female3 text3 null3"
+                       "null4 text4 male4"
+                       "female5 text5 null5"
+                       "null6 text6 male6";
+}
+.female .row_1{
+grid-area: female1;
+}
+.text .row_1{
+grid-area: text1;
+}
+.male .row_2{
+grid-area: male2;
+}
+.text .row_2{
+grid-area: text2;
+}
+.female .row_3{
+grid-area: female3;
+}
+.text .row_3{
+grid-area: text3;
+}
+.male .row_4{
+grid-area: male4;
+}
+.text .row_4{
+grid-area: text4;
+}
+.female .row_5{
+grid-area: female5;
+}
+.text .row_5{
+grid-area: text5;
+}
+.text .row_6{
+grid-area: text6;
+}
+.male .row_6{
+grid-area: male6;
+}
+.null_box_1{
+grid-area: null1;
+}
+.null_box_2{
+grid-area: null2;
+}
+.null_box_3{
+grid-area: null3;
+}
+.null_box_4{
+grid-area: null4;
+}
+.null_box_5{
+grid-area: null5;
+}
+.null_box_6{
+grid-area: null6;
+}
+.male, .female{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 10px 0px 10px 10px;
+}
+.info_box_left, .info_box_right{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: right;
+}
+.female .info_box_left{
+  min-width: 60%;
+  padding-top: calc(25% - 26px);
+}
+.male .info_box_right{
+  text-align: left;
+  min-width: 60%;
+  padding-top: calc(25% - 30px);
+}
+.female .second_fem{
+  padding-top: calc(22% - 28px);
+}
+.female .info_box_right{
+  background: url('./icons/female.jpg') no-repeat;
+  background-position: center;
+  min-width: 40%;
+}
+.male .info_box_left{
+  background: url('./icons/male.jpg') no-repeat;
+  background-position: 50% 110%;
+  min-width: 40%;
+}
+.text:nth-child(even){
+  background: #ffb6c1;
+  border-radius: 20px 20px 20px 0;
+}
+.text:nth-child(odd){
+  background: #add8e6;
+  border-radius: 20px 20px 0 20px;
+}
+.text{
+  padding: 8% 22px;
+}
+.ago{
+  color: #a2a0a5;
+}

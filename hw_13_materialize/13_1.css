@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+.main_container{
+  width: 100%;
+  height: 100%;
+}
+.sidebar__mod{
+  margin-bottom: 20px;
+}
+.material-icons{
+  margin-right: 14px;
+  color: #0382c3;
+}
+.body_link{
+  padding-left: 12px;
+}
+.body_link:hover{
+  background: #e4f6fe;
+  cursor: pointer;
+}
+.body_link a{
+  color: #0382c3;
+}
+.body_friend:hover, .card-action .col:hover{
+  cursor: pointer;
+}
+.active{
+  background: #e4f6fe;
+}

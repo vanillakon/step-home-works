@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 2 Page</title>
+    <link rel="stylesheet" href="10_2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha444-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a1109fe201.js" crossorigin="anonymous"></script>
+    </head>
+    <body onload="time()">
+      <div class="container-fluid" style="min-height: 100%;">
+        <div class="row" style='height: 72px;'>
+          <div class="col-12">
+            <nav class="navbar fixted-top navbar-expand-lg navbar-light bg-info" style='height: 72px; margin-left: -30px; margin-right: -30px;'>
+            <a class="navbar-brand" href="#"><i class="fas fa-user-graduate nav_logo"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link nav_link__colored" href="#">Attendance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav_link__colored" href="#">Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active nav_link__colored text-light" href="#">Homework</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-bell nav_rightside"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-user-circle nav_rightside"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-door-open nav_rightside"></i></a>
+                  </li>
+                </ul>
+              </span>
+            </div>
+            </nav>
+          </div>
+      </div>
+      <div class="row" style='height: 104px;'>
+        <div class="col-12 d-flex justify-content-center pt-5 out_time">homework
+        </div>
+      </div>
+<div class="row pt-4 thirdnav_title" style='height: 60px;'>
+  <div class="col-1 pt-3" style="padding-left:0px; font-weight: bold;">Group</div>
+  <div class="col-1 pt-3" style="padding-left:0px; font-weight: bold;">Subject</div>
+</div>
+<div class="row pt-1" style='height: 70px;'>
+  <div class="col-1 pt-2" style="padding-left:0px;">
+    <select class="custom-select pl-4 select__mod" id="inlineFormCustomSelect" style="height: 38px;">
+        <option selected>ABC-1234</option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+      </select>
+  </div>
+  <div class="col-1 pt-2" style="padding-left:0px; margin-right: 10px;">
+    <select class="custom-select pl-4 select__mod" id="inlineFormCustomSelect" style="height: 38px; width: 170px;">
+        <option selected>HTML & CSS</option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+      </select>
+    </div>
+  <div class="col-1 pt-2" style="padding-left:0px; height: 44px; margin-left: 28px;"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#staticBackdrop">Show</button></div>
+</div>
+<div class="row stud_nav__colored border-bottom pt-3 pl-2" style="height: 60px;">
+    <div style="width: 64px;"></div>
+    <div class="col">Student</div>
+    <div class="col-1">18.04</div>
+    <div class="col-1">14.04</div>
+    <div class="col-1">12.04</div>
+    <div class="col-1">10.04</div>
+</div>
+<div class="row border-bottom" style="height: 74px;">
+    <div class="p-4" style="width: 64px;">1</div>
+    <div class="col p-4">Ashton Hickman</div>
+    <div class="col-1">
+      <div class="row" style="height: 74px;">
+        <div class="col-2 pt-4" style="margin-left: -44px;"><i class="fas fa-file-code file__mod"></i></div>
+        <div class="col pt-3"><select class="custom-select select__mod" id="inlineFormCustomSelect" style="height: 44px;">
+                <option selected>-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+              </select> </div>
+      </div>
+</div>
+    <div class="col-1 p-4">
+<i class="fas fa-minus minus__mod"></i>
+</div>
+    <div class="col-1">
+      <div class="row" style="height: 74px;">
+        <div class="col-2 pt-4" style="margin-left: -44px;"><i class="fas fa-file-code file__mod"></i></div>
+        <div class="col pt-3"><select class="custom-select select__mod" id="inlineFormCustomSelect" style="height: 44px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option selected value="10">10</option>
+                <option value="11">11</option>
+              </select> </div>
+      </div>
+</div>
+    <div class="col-1 p-4"><i class="fas fa-minus minus__mod"></i></div>
+</div>
+<div class="row border-bottom" style="height: 74px;">
+    <div class="p-4" style="width: 64px;">2</div>
+    <div class="col p-4">Mischa Roberson</div>
+    <div class="col-1 p-4">
+<i class="fas fa-minus minus__mod"></i>
+</div>
+    <div class="col-1">
+      <div class="row" style="height: 74px;">
+        <div class="col-2 pt-4" style="margin-left:-49px; margin-right: 5px;"><i class="fas fa-link link__mod"></i></div>
+        <div class="col pt-3"><select class="custom-select select__mod" id="inlineFormCustomSelect" style="height: 44px;">
+                <option selected>-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+              </select> </div>
+      </div>
+</div>
+    <div class="col-1 p-4">
+<i class="fas fa-minus minus__mod"></i>
+</div>
+    <div class="col-1">
+      <div class="row" style="height: 74px;">
+        <div class="col-2 pt-4" style="margin-left:-49px; margin-right: 5px;"><i class="fas fa-link link__mod"></i></div>
+        <div class="col pt-3"><select class="custom-select select__mod" id="inlineFormCustomSelect" style="height: 44px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option selected value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+              </select> </div>
+      </div>
+    </div>
+</div>
+<div class="row border-bottom" style="height: 74px;">
+    <div class="p-4" style="width: 64px;">3</div>
+    <div class="col p-4">Jaydon Metcalfe</div>
+
+    <div class="col-1 p-4">
+<i class="fas fa-minus minus__mod"></i>
+</div>
+    <div class="col-1 p-4">
+<i class="fas fa-minus minus__mod"></i>
+</div>
+    <div class="col-1 p-4"><i class="fas fa-minus minus__mod"></i>
+</div>
+    <div class="col-1 p-4"><i class="fas fa-minus minus__mod"></i></div>
+</div>
+
+<div class="row border-bottom" style="height: 74px;">
+    <div class="p-4" style="width: 64px;">4</div>
+    <div class="col p-4">Gary Jacobson</div>
+    <div class="col-1 p-4"><i class="fas fa-minus minus__mod"></i>
+</div>
+    <div class="col-1 p-4"><i class="fas fa-minus minus__mod"></i>
+</div>
+  <div class="col-1">
+    <div class="row" style="height: 74px;">
+      <div class="col-2 pt-4" style="margin-left:-49px; margin-right: 5px;"><i class="fas fa-link link__mod"></i></div>
+      <div class="col pt-3"><select class="custom-select select__mod" id="inlineFormCustomSelect" style="height: 44px;">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option selected value="11">11</option>
+            </select> </div>
+    </div>
+  </div>
+  <div class="col-1">
+    <div class="row" style="height: 74px;">
+      <div class="col-2 pt-4" style="margin-left: -44px;"><i class="fas fa-file-code file__mod"></i></div>
+      <div class="col pt-3"><select class="custom-select select__mod" id="inlineFormCustomSelect" style="height: 44px;">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option selected value="10">10</option>
+              <option value="11">11</option>
+            </select> </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha444-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy44MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha444-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha444-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+  </html>

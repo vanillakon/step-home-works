@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+.row{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.nav_link__colored{
+  color: #79cfdc !important;
+}
+.nav_logo{
+  font-size: 38px;
+}
+.nav_rightside{
+  font-size: 28px;
+  color: #fff;
+  opacity: 0.6;
+}
+.secnav_title{
+  background: #bee5eb;
+}
+.nav_body__colored{
+  color: #15b0d8;
+}
+.stud_nav__colored{
+  background: #bee5eb;
+  color: #fff;
+  border-top: 1px solid #8fd2dd;
+}
+.thirdnav_title{
+  color: #ced6e1;
+}
+.custom-control-inline{
+  margin-right: 12px !important;
+}
+.input_radio__pos,.input_radio__half,.input_radio__neg{
+  -webkit-appearance: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.input_radio__pos{
+  border: 1px solid #1a751a;
+}
+.input_radio__half{
+  border: 1px solid #ffa332;
+}
+.input_radio__neg{
+  border: 1px solid #a13030;
+}
+
+.input_radio__pos:before,.input_radio__half:before,.input_radio__neg:before{
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+ .input_radio__pos:checked:before {
+  background: #1a751a;
+}
+.input_radio__half:checked:before{
+  background: #ffa332;
+}
+.input_radio__neg:checked:before{
+  background: #a13030;
+}
+.modal__mod{
+  min-width: 575px;
+  min-height: 360px;
+}
+.textarea__mod{
+  height: 55px !important;
+  margin-left: 8px;
+}
+.out_time{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: lighter;
+}
+.select__mod{
+-webkit-appearance: none !important;
+background-color: white !important;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==) !important;
+/* background-position : right center !important; */
+background-repeat: no-repeat !important;
+background-size: 15px !important;
+/* padding-right: 5em !important; */
+}
+.minus__mod, .file__mod, .link__mod{
+font-size: 28px;
+color: #86cfda;
+cursor: pointer;
+}
+.file__mod{
+font-size: 30px;
+}

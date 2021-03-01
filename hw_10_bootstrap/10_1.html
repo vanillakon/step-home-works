@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="10_1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a1109fe201.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      function time(){
+        let now = new Date();
+        let day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        let month = ['January', 'February' , 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        let out = document.querySelector('.out_time');
+        out.innerHTML = `${now.getDate()} ${month[now.getMonth()]}, ${day[now.getDay()]}`;
+      }
+    </script>
+    </head>
+    <body onload="time()">
+      <div class="container-fluid" style="min-height: 100%;">
+        <div class="row" style='height: 72px;'>
+          <div class="col-12">
+            <nav class="navbar fixted-top navbar-expand-lg navbar-light bg-info" style='height: 72px; margin-left: -30px; margin-right: -30px;'>
+            <a class="navbar-brand" href="#"><i class="fas fa-user-graduate nav_logo"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link active text-light" href="#">Attendance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav_link__colored" href="#">Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav_link__colored" href="#">Homework</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-bell nav_rightside"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-user-circle nav_rightside"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-door-open nav_rightside"></i></a>
+                  </li>
+                </ul>
+              </span>
+            </div>
+            </nav>
+          </div>
+      </div>
+      <div class="row" style='height: 104px;'>
+        <div class="col-12 d-flex justify-content-center pt-5 out_time">
+        </div>
+      </div>
+<div class="row">
+  <div class="col-12" style="padding-left:0px; padding-right:0px;">
+    <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">1 lesson</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav_body__colored" href="#">2 lesson</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav_body__colored" href="#">3 lesson</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav_body__colored" href="#">4 lesson</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav_body__colored" href="#">5 lesson</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav_body__colored" href="#">6 lesson</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active border-bottom" href="#">7 lesson</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav_body__colored" href="#">8 lesson</a>
+  </li>
+</ul>
+  </div>
+</div>
+<div class="row pt-4 thirdnav_title" style='height: 60px;'>
+  <div class="col-1" style="padding-left:0px;">Group</div>
+  <div class="col-1" style="padding-left:0px;">Subject</div>
+  <div class="col-2" style="padding-left:0px;">Lesson topic</div>
+  <div class="col-1" style="padding-left:0px;">Homework</div>
+</div>
+<div class="row pt-1" style='height: 70px;'>
+  <div class="col-1 pt-2" style="padding-left:0px;">ABC-1234</div>
+  <div class="col-1 pt-2" style="padding-left:0px;">HTML & CSS</div>
+  <div class="col-2" style="padding-left:0px;"><input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search"></div>
+  <div class="col-2" style="padding-left:0px;"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#staticBackdrop">Add homework</button></div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal__mod">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">New homework</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group mt-4">
+        <label for="exampleInputEmail1">Topic</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row stud_nav__colored border-bottom pt-3 pl-2" style="height: 60px;">
+    <div style="width: 64px;"></div>
+    <div class="col-2">Name</div>
+    <div class="col-1">GPA</div>
+    <div class="col-2" style="padding-left: 1.7%;">Is present</div>
+    <div class="col-1" style="padding-left: 3%;">Test</div>
+    <div class="col-1" style="padding-left: 2%;">Classwork</div>
+    <div class="col" style="padding-left: 17%;">Comment</div>
+</div>
+<div class="row border-bottom" style="height: 74px;">
+    <div class="p-4" style="width: 64px;">1</div>
+    <div class="col-2 p-4">Ashton Hickman</div>
+    <div class="col-1 p-4">10</div>
+    <div class="col-2 p-4">
+      <div class="form-check form-check-inline">
+      <input class="form-check-input input_radio__pos" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1"></label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input input_radio__half" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2"></label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input input_radio__neg" type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="option3">
+  <label class="form-check-label" for="inlineRadio3"></label>
+</div>
+</div>
+    <div class="col-1 p-2">
+      <select class="custom-select pl-4 select__mod" id="inlineFormCustomSelect" style="height: 55px;">
+          <option selected>-</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+</div>
+    <div class="col-1 p-2">
+      <select class="custom-select pl-4 select__mod" id="inlineFormCustomSelect" style="height: 55px;">
+        <option selected>-</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+</div>
+    <div class="col p-2"><textarea class="form-control textarea__mod" id="exampleFormControlTextarea1" rows="1"></textarea></div>
+</div>
+<div class="row border-bottom" style="height: 74px;">
+    <div class="p-4" style="width: 64px;">2</div>
+    <div class="col-2 p-4">Mischa Roberson</div>
+    <div class="col-1 p-4">9</div>
+    <div class="col-2 p-4">
+      <div class="form-check form-check-inline">
+      <input class="form-check-input input_radio__pos" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1"></label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input input_radio__half" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2"></label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input input_radio__neg" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2"></label>
+</div>
+</div>
+    <div class="col-1 p-2">
+      <select class="custom-select selectpicker pl-4 select__mod" id="inlineFormCustomSelect" style="height: 55px;">
+          <option selected>-</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+</div>
+    <div class="col-1 p-2">
+      <select class="custom-select selectpicker pl-4 select__mod" id="inlineFormCustomSelect" style="height: 55px;">
+        <option selected>-</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+</div>
+    <div class="col p-2"><textarea class="form-control textarea__mod" id="exampleFormControlTextarea1" rows="1"></textarea></div>
+</div>
+<div class="row border-bottom" style="height: 74px;">
+    <div class="p-4" style="width: 64px;">3</div>
+    <div class="col-2 p-4">Jaydon Metcalfe</div>
+    <div class="col-1 p-4">11</div>
+    <div class="col-2 p-4">
+      <div class="form-check form-check-inline">
+      <input class="form-check-input input_radio__pos" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1"></label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input input_radio__half" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2"></label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input input_radio__neg" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2"></label>
+</div>
+</div>
+    <div class="col-1 p-2">
+      <select class="custom-select selectpicker pl-4 select__mod" id="inlineFormCustomSelect" style="height: 55px;">
+          <option selected>-</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+</div>
+    <div class="col-1 p-2">
+      <select class="custom-select selectpicker pl-4 select__mod" id="inlineFormCustomSelect" style="height: 55px;">
+        <option selected>-</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+</div>
+    <div class="col p-2"><textarea class="form-control textarea__mod" id="exampleFormControlTextarea1" rows="1"></textarea></div>
+</div>
+<div class="row border-bottom" style="height: 74px;">
+    <div class="p-4" style="width: 64px;">4</div>
+    <div class="col-2 p-4">Gary Jacobson</div>
+    <div class="col-1 p-4">8</div>
+    <div class="col-2 p-4">
+      <div class="form-check form-check-inline">
+      <input class="form-check-input input_radio__pos" type="radio" name="inlineRadioOptions4" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1"></label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input input_radio__half" type="radio" name="inlineRadioOptions4" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2"></label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input input_radio__neg" type="radio" name="inlineRadioOptions4" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2"></label>
+</div>
+</div>
+    <div class="col-1 p-2">
+      <select class="custom-select selectpicker pl-4 select__mod" id="inlineFormCustomSelect" style="height: 55px;">
+          <option selected>-</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+</div>
+    <div class="col-1 p-2">
+      <select class="custom-select selectpicker pl-4 select__mod" id="inlineFormCustomSelect" style="height: 55px;">
+        <option selected>-</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+</div>
+    <div class="col p-2"><textarea class="form-control textarea__mod" id="exampleFormControlTextarea1" rows="1"></textarea></div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+  </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form3</title>
+    <link rel="stylesheet" href="9_3.css">
+    </head>
+    <body>
+      <div class="container">
+        <form action="#" class="form_style">
+          <div class="registration">
+            <div class="partofform_title">Registration form</div>
+            <span class="reg_row reg_row_img1">
+              <img src="./icons/username.png" alt="" class="reg_img">
+              <input type="text" placeholder="Username" class="reg_input reg_input__user">
+            </span>
+            <span class="reg_row reg_row_img2">
+              <img src="./icons/email.png" alt="" class="reg_img">
+              <input type="text" placeholder="Email address" class="reg_input reg_input__mail">
+            </span>
+            <span class="reg_row_img3">
+              <img src="./icons/pswd.png" alt="" class="reg_img">
+              <input type="password" placeholder="Password" class="reg_input pass_inp">
+              <input type="text" placeholder="Confirm password" class="reg_input reg_input__sm">
+            </span>
+
+          </div>
+          <div class="personal">
+            <div class="partofform_title">Personal details</div>
+            <span class="pers_row__one"><input type="password" placeholder="First name" class="reg_input pass_inp">
+            <input type="text" placeholder="Last name" class="reg_input">
+            </span>
+
+            <span class="pers_row__two">
+              <div class="select_box">
+              <select class="select reg_input pass_inp" name="">
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">It</option>
+              </select>
+              </div>
+              <input type="text" placeholder="mm/dd/yyyy" class="reg_input pers_inp pers_inp__mod">
+            </span>
+          </div>
+          <div class="clearfix"></div>
+          <div class="rules">
+            <span class="rules_span"><input type="checkbox" name="want" value="" class="rules_check"><label for="want">I want to receive mews and special offers</label></span>
+            <span class="rules_span"><input type="checkbox" name="agree" value="" class="rules_check"><label for="agree">I agree with the Terms ans Conditions</label></span>
+            <div class="box_hr"></div>
+            <input type="submit" name="" value="SUBMIT" class="rules_btn">
+          </div>
+        </form>
+      </div>
+    </body>
+  </html>

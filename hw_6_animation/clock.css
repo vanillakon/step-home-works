@@ -1,0 +1,123 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+.container{
+  width: 529px;
+  height: 410px;
+  margin: 30px auto;
+  background: #f5f5f5;
+  padding: 30px 98px 56px 98px;
+}
+.clock_border{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #008b8b;
+  padding: calc(50% - 6px);
+}
+.clock_center{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #008b8b;
+  position: relative;
+  z-index: 5;
+  perspective: 1000px;
+}
+.clock_center:before, .clock_center:after{
+  content: "";
+  position: absolute;
+  background: #008b8b;
+  /* background: #000; */
+  border-radius: 5px;
+  top: 5px;
+  z-index: 10;
+
+}
+.clock_center::before{
+left: 4px;
+width: 4px;
+height: 100px;
+animation-name: hours;
+animation-duration: 360s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+transform-origin: right 0%;
+}
+.clock_center::after{
+left: 5px;
+width: 2px;
+height: 140px;
+animation-name: min;
+animation-duration: 60s;
+animation-timing-function: steps(60);
+/* animation-timing-function: linear; */
+animation-iteration-count: infinite;
+transform-origin: right 0%;
+}
+@keyframes hours {
+  0%{
+    transform: rotate(0deg) translateZ(0px);
+  }
+  25%{
+    transform: rotate(90deg) translateX(2px) translateY(-1px);
+  /* top: 8px;
+  left: 3px; */
+  }
+  /* 40%{
+    left: 2px;
+  } */
+  50%{
+    transform: rotate(180deg) translateY(-2px) translateX(4px);
+  /* left: 0px;
+  top: 7px; */
+  }
+  /* 60%{
+    left: 0px;
+    top: 5px;
+  } */
+  75%{
+    transform: rotate(270deg) translateX(2px) translateY(-2px);
+  /* left: 1px;
+  top: 4px; */
+  }
+  100%{
+    transform: rotate(360deg) translateZ(0px);
+  }
+}
+@keyframes min {
+  0%{
+    transform: rotate(0deg) translateZ(0px);
+  }
+  25%{
+    transform: rotate(90deg) translateX(2px) translateY(-1px);
+    /* top: 7px;
+    left: 5px; */
+  }
+  /* 40%{
+    top: 7px;
+    left: 4px;
+  } */
+  50%{
+    transform: rotate(180deg) translateX(2px) translateY(-2px);
+    /* left: 3px;
+    top: 7px; */
+  }
+  /* 60%{
+    left: 3px;
+    top: 6px;
+  } */
+  75%{
+    transform: rotate(270deg) translateX(1px) translateY(-1px);
+    /* left: 3px;
+    top: 5px; */
+  }
+  100%{
+    transform: rotate(360deg) translateZ(0px);
+  }
+}

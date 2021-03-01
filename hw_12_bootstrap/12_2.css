@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+.nav_link__colored{
+  color: #fff !important;
+  opacity: 0.5;
+}
+.nav_link__colored:hover{
+  color: #fff;
+  opacity: 1;
+}
+.title{
+  font-size: 24px;
+}
+.title_body{
+  color: #14589c;
+  font-size: 18px;
+  font-weight: 400;
+}
+.avatar{
+  width: 130px;
+  height: 140px;
+  background: url('./w2.png') no-repeat;
+  background-size: contain;
+  margin-left: 10px;
+}
+.form-control{
+  margin-bottom: 15px;
+  height: 38px !important;
+}
+.card-body{
+  border-radius: 5px;
+}

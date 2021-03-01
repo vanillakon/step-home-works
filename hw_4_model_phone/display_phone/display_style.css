@@ -1,0 +1,319 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html, body{
+  height: 100%;
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: normal;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+.container{
+  max-width: 600px;
+  margin: 30px auto;
+  padding-left:calc((600px - 260px)/2);
+}
+.phone_display{
+  width: 260px;
+  height: 440px;
+  display: flex;
+  padding: 20px 10px;
+  flex-direction: column;
+  background: linear-gradient(-90deg, rgba(112,147,185,1) 10%, rgba(244,34,54,1) 100%);
+}
+.display_top{
+  display: flex;
+  height: 24px;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+.display_mid{
+  display: flex;
+  flex-direction: column;
+}
+.phone_lefttop{
+  color: #f9f9f5;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+.phone_righttop{
+  position: relative;
+  top: -10px;
+  left: -55px;
+  height: 16px;
+  display: flex;
+}
+.phone_righttop:after{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #6b6476;
+  opacity: 0.3;
+  left: 200px;
+  margin-top: 23px;
+}
+.phone_signal, .phone_wifi, .phone_battery{
+  width: 16px;
+  position: absolute;
+}
+.phone_signal{
+display: flex;
+height: 8px;
+top: 10px;
+left: 193px;
+transform: rotate(180deg);
+}
+.signal_one,.signal_two,.signal_three,.signal_four{
+width: 3px;
+background: #f9f9f5;
+border-right: 1px solid rgba(121,140,177,0.8);
+}
+.signal_one{
+  height: 5px;
+}
+.signal_two{
+  height: 4px;
+}
+.signal_three{
+  height: 3px;
+}
+.signal_four{
+  height: 2px;
+}
+.phone_wifi{
+width: 10px;
+top: 12px;
+left: 211px;
+}
+.wifi_one,.wifi_two,.wifi_three,.wifi_four,.wifi_five{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #f9f9f5;
+  border-radius: 50%;
+}
+.wifi_two{
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid rgba(121,140,177,0.8);
+  top: 1px;
+  left: 1px;
+}
+.wifi_three{
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top:4px solid #f9f9f5;
+  top: 2px;
+  left: 2px;
+}
+.wifi_four{
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 3px solid rgba(121,140,177,0.8);
+  top: 3px;
+  left: 3px;
+}
+.wifi_five{
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 2px solid #f9f9f5;
+  top: 4px;
+  left: 4px;
+}
+.phone_battery{
+  display: flex;
+  height: 5px;
+  top: 13px;
+  left: 224px;
+}
+.phone_batbody, .phone_bathead{
+  background: #f9f9f5;
+}
+.phone_batbody{
+  width: 12px;
+  height: 100%;
+  border-radius: 1px;
+  border: 1px solid rgba(121,140,177,0.8);
+  z-index: 5;
+}
+.phone_bathead{
+width: 4px;
+height: 50%;
+position: absolute;
+top: 1px;
+left: 9px;
+border-radius: 1px;
+border: 1px solid rgba(121,140,177,0.8);
+z-index: 2;
+}
+.phone_lock{
+  display: flex;
+  flex-direction: column;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  left: calc(50% - 14px);
+  top: 14px;
+  margin: 0 0 22px 0;
+}
+.phone_locked{
+  left: calc(50% - 11px);
+  position: absolute;
+  bottom: 0;
+  width: 17px;
+  height: 14px;
+  background: #f9f9f5;
+  border-radius: 3px;
+}
+.phone_toplock{
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 13px;
+  height: 12px;
+  border-radius: 13px 13px 0 0;
+  border-top: 2px solid #f9f9f5;
+  border-left: 2px solid #f9f9f5;
+  border-right: 2px solid #f9f9f5;
+}
+.phone_time, .phone_date{
+  font-size: 40px;
+  color: #f9f9f5;
+  text-align: center;
+  font-weight: 100;
+}
+.phone_date{
+  font-size: 13px;
+}
+.phone_messages{
+  display: flex;
+  flex-direction: column;
+}
+.phone_topmessages,.phone_botmessages{
+  width: 100%;
+  height: 75px;
+  background: rgba(255,255,255,0.3);
+  margin-bottom: 9px;
+  border-radius: 15px;
+  padding: 10px 13px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.phone_topmessages{
+  margin-top: 25px;
+  height: 98px;
+}
+.topmessages_top,.botmessages_top{
+  display: flex;
+}
+.topmessages_name,.botmessages_name{
+font-size: 12px;
+margin-left: 5px;
+position: relative;
+top: 4px;
+color: rgb(210, 32, 72);
+}
+.topmessages_time,.botmessages_time{
+font-size: 12px;
+position: absolute;
+left: 80%;
+top: 15px;
+color: rgba(62,94,130,1);
+}
+.topmessages_time{
+  left: 86%;
+}
+.topmessages_bot,.botmessages_bot{
+font-size: 14px;
+color: rgba(0, 0, 0, 0.8);
+}
+p:first-child{
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.logo{
+width: 22px;
+height: 22px;
+border-radius: 7px;
+margin-bottom: 14px;
+padding: 6px 5px;
+}
+.logo_top{
+  background: rgba(33,202,59);
+}
+.logo_bot{
+  background: #fff;
+}
+.logo_topform{
+width: 12px; 
+height: 9px;
+background: #fff;
+border-radius: 100px/50px;
+position: relative;
+z-index: 10;
+}
+.logo_topform:after{
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid #fff;
+  bottom: -3px;
+  left: 0px;
+  transform: rotate(45deg);
+  z-index: 5;
+}
+.logo_botform{
+  width: 12px;
+  height: 9px;
+  background: rgba(228, 204, 190);
+  position: relative;
+  top: 1px;
+  z-index: 10;
+}
+.logo_botform:before, .logo_botform:after{
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 6px solid rgb(213, 123, 125);
+  border-bottom: 4px solid transparent;
+  z-index: 5;
+}
+.logo_botform:before{
+  transform: rotate(180deg);
+  border-top: 4px solid transparent;
+  border-right: 6px solid rgb(213, 123, 125);
+  border-bottom: 5px solid transparent;
+}
+.logo_botform:after{
+  left: 6px;
+}
+.botform_one{
+  position: absolute;
+  border-top: 4px solid transparent;
+  border-right: 5px solid rgba(228, 204, 190);
+  border-bottom: 3px solid transparent;
+  z-index: 20;
+  left: 6px;
+  top: 2px;
+}
+.botform_two{
+  transform: rotate(180deg);
+  border-top: 3px solid transparent;
+  border-right: 5px solid rgba(228, 204, 190);
+  border-bottom: 4px solid transparent;
+  left: 1px;
+}
